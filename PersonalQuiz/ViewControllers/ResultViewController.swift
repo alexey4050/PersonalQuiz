@@ -13,6 +13,7 @@ final class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Избавиться от кнопки возврата назад на экране результатов
         navigationItem.hidesBackButton = true
         }
     
@@ -24,6 +25,7 @@ final class ResultViewController: UIViewController {
         print("\(type(of: self)) has been deallocated")
     }
     
+    // Определить наиболее часто встречающийся тип животного
     private func findMostFrequentAnimalType() -> Animal? {
         var animalCount: [Animal: Int] = [:]
         
